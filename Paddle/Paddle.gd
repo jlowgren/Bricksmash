@@ -8,17 +8,16 @@ var velocity = Vector2.ZERO
 
 func _physics_process(delta):
 	var input_vector = get_input_vector()
-	
 	if input_vector == Vector2.ZERO:
 		# Decelerate to zero
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	else:
 		velocity += input_vector * ACCELERATION * delta
 		velocity = velocity.clamped(MAX_SPEED * delta)
-	
+
 	# Move pixel perfectly
 	var pixel_perfect_vector = Vector2(round(velocity.x), round(velocity.y))
-	
+
 	move_and_collide(pixel_perfect_vector)
 
 func get_input_vector() -> Vector2:
