@@ -15,10 +15,7 @@ func _physics_process(delta):
 		velocity += input_vector * ACCELERATION * delta
 		velocity = velocity.clamped(MAX_SPEED * delta)
 
-	# Move pixel perfectly
-	var pixel_perfect_vector = Vector2(round(velocity.x), round(velocity.y))
-
-	move_and_collide(pixel_perfect_vector)
+	move_and_collide(velocity)
 
 func get_input_vector() -> Vector2:
 	var v = Vector2.ZERO

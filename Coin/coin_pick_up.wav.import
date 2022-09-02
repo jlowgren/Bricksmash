@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/bounce2.wav-e59f1f068d8bcf9d11983a5246e78ae9.sample"
+path="res://.import/coin_pick_up.wav-a54e19a2d2ab23081118f1669cb7f68e.sample"
 
 [deps]
 
-source_file="res://Ball/bounce2.wav"
-dest_files=[ "res://.import/bounce2.wav-e59f1f068d8bcf9d11983a5246e78ae9.sample" ]
+source_file="res://Coin/coin_pick_up.wav"
+dest_files=[ "res://.import/coin_pick_up.wav-a54e19a2d2ab23081118f1669cb7f68e.sample" ]
 
 [params]
 

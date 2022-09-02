@@ -16,6 +16,9 @@ func _physics_process(delta):
 		$BallBounceSound.play()
 		velocity = velocity.bounce(collision.normal)
 
+		if collision.collider.is_in_group("Bricks"):
+			collision.collider.queue_free()
+
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 	emit_signal("ball_destroyed")
