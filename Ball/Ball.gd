@@ -14,6 +14,7 @@ func _physics_process(delta):
 	var collision = move_and_collide(velocity * speed * delta)
 	if collision:
 		$BallBounceSound.play()
+
 		velocity = velocity.bounce(collision.normal)
 
 		if collision.collider.is_in_group("Bricks"):

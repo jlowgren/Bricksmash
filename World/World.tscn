@@ -55,10 +55,10 @@ position = Vector2( 88, 40 )
 position = Vector2( 72, 40 )
 
 [node name="Brick3" parent="Bricks" instance=ExtResource( 1 )]
-position = Vector2( 104, 56 )
+position = Vector2( 104, 48 )
 
 [node name="Brick4" parent="Bricks" instance=ExtResource( 1 )]
-position = Vector2( 72, 56 )
+position = Vector2( 72, 48 )
 
 [node name="Brick5" parent="Bricks" instance=ExtResource( 1 )]
 position = Vector2( 104, 40 )
@@ -70,10 +70,10 @@ position = Vector2( 232, 40 )
 position = Vector2( 216, 40 )
 
 [node name="Brick8" parent="Bricks" instance=ExtResource( 1 )]
-position = Vector2( 248, 56 )
+position = Vector2( 248, 48 )
 
 [node name="Brick9" parent="Bricks" instance=ExtResource( 1 )]
-position = Vector2( 216, 56 )
+position = Vector2( 216, 48 )
 
 [node name="Brick10" parent="Bricks" instance=ExtResource( 1 )]
 position = Vector2( 248, 40 )
@@ -85,22 +85,30 @@ position = Vector2( 160, 40 )
 position = Vector2( 144, 40 )
 
 [node name="Brick13" parent="Bricks" instance=ExtResource( 1 )]
-position = Vector2( 176, 56 )
+position = Vector2( 176, 48 )
 
 [node name="Brick14" parent="Bricks" instance=ExtResource( 1 )]
-position = Vector2( 144, 56 )
+position = Vector2( 144, 48 )
 
 [node name="Brick15" parent="Bricks" instance=ExtResource( 1 )]
 position = Vector2( 176, 40 )
 
 [node name="Brick16" parent="Bricks" instance=ExtResource( 1 )]
-position = Vector2( 88, 56 )
+position = Vector2( 88, 48 )
 
 [node name="Brick17" parent="Bricks" instance=ExtResource( 1 )]
-position = Vector2( 160, 56 )
+position = Vector2( 160, 48 )
 
 [node name="Brick18" parent="Bricks" instance=ExtResource( 1 )]
-position = Vector2( 232, 56 )
+position = Vector2( 232, 48 )
 
-[node name="Coin" parent="." instance=ExtResource( 6 )]
-position = Vector2( 160, 72 )
+[node name="Coins" type="Node" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 176, 64 )
+
+[node name="Coin2" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 144, 64 )
+
+[node name="Coin3" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 160, 64 )
