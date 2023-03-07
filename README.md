@@ -2,6 +2,8 @@
 
 > A breakout clone, made with Godot
 
+## About
+
 This is an unfinished breakout clone that I made while learning Godot. Maybe it can serve as a source of inspiration.
 
 It features:
@@ -12,3 +14,7 @@ It features:
 - Bricks
 - Walls
 - Original assets
+
+## License
+
+MIT
